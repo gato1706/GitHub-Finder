@@ -1,54 +1,72 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React Logo" width="60" height="60"/>
+  &nbsp;&nbsp;
+  <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="TypeScript Logo" width="60" height="60"/>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# GitHub User Finder 🔍
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é uma aplicação web desenvolvida com **React** e **TypeScript** que permite buscar informações públicas de usuários do GitHub utilizando a **API oficial do GitHub**. A ideia principal foi criar uma interface simples e funcional para praticar e aprofundar meus conhecimentos em **React**, **TypeScript** e **consumo de APIs REST**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- 🔎 Busca de usuários do GitHub pelo nome de usuário
+- 👤 Exibição de informações públicas como avatar, bio, localização, seguidores, repositórios, entre outros
+- 📁 Navegação entre páginas com **React Router DOM**
+- 🎨 Estilização com **CSS Modules**, garantindo organização e escopo local de estilos
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Tecnologias Utilizadas
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React** – biblioteca para construção da interface
+- **TypeScript** – tipagem estática para maior segurança e legibilidade
+- **React Router DOM** – controle de rotas e navegação entre páginas
+- **CSS Modules** – encapsulamento de estilos
+- **GitHub API** – consumo direto da API pública do GitHub para obtenção de dados dos usuários
+
+---
+
+## 🎯 Objetivo do Projeto
+
+O objetivo principal foi colocar em prática meus estudos em **TypeScript com React**, além de melhorar meu entendimento sobre **consumo de APIs** e boas práticas de organização de código com componentes reutilizáveis.
+
+Este projeto foi desenvolvido com base em uma aula prática do canal do **Matheus Battisti** no YouTube, que serviu como guia e inspiração durante o desenvolvimento.
+
+📺 Aula utilizada como base:  
+👉 [Consumindo API do GitHub com React + TypeScript | Matheus Battisti](https://youtu.be/3sQITRihW_A?si=HjErMBKog86nUt1P)
+
+---
+
+## 🧠 Aprendizados
+
+Durante o desenvolvimento deste projeto, pude:
+
+- ✅ Reforçar conceitos fundamentais de **TypeScript** aplicados ao React
+- ✅ Praticar a **tipagem de props e estados**, aumentando a segurança do código
+- ✅ Consumir uma **API REST externa** com tratamento de erros e respostas
+- ✅ Utilizar **React Router DOM** para navegação entre páginas
+- ✅ Modularizar estilos usando **CSS Modules**, mantendo o código limpo e organizado
+- ✅ Compreender melhor o fluxo de dados em aplicações React funcionais
+
+---
+
+## 🚀 Como rodar o projeto
+
+Para rodar localmente, siga os passos abaixo:
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repo.git
+
+# Acesse a pasta do projeto
+cd seu-repo
+
+# Instale as dependências
+npm install
+
+# Inicie o projeto
+npm run dev
