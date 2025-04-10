@@ -1,7 +1,6 @@
 import { UserProps } from "../types/user";
 
 import { MdLocationPin } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 import classes from "./User.module.css";
 
@@ -33,7 +32,7 @@ const User = ({
         </div>
       </div>
 
-      <Link to={`/repos/${login}`}> Ver Melhores Projetos </Link>
+     
     </div>
   );
 };
